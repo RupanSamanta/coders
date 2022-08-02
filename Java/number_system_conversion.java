@@ -19,12 +19,12 @@ public class number_system_conversion {
 		    case 'a':
 		        System.out.print("Enter a Decimal Number : ");
 		        long db = rs.nextLong();
-		        System.out.println("Binary Equivalent : "+decimalToBinary(db));
+		        System.out.println("Binary Equivalent : ("+decimalToBinary(db)+")\u2082");
 		    break;
 		    case 'b':
 		        System.out.print("Enter a Binary Number : ");
 		        long bd = rs.nextLong();
-		        System.out.print("Decimal Equivalent : "+binaryToDecimal(bd));
+		        System.out.print("Decimal Equivalent : ("+binaryToDecimal(bd)+")\u2081\u2080");
 		    break;
 		}
 		rs.close();
