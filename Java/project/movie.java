@@ -11,9 +11,9 @@ class movie_ticket_reservation_system{
                 "Inox", "Cinepolis", "Star Theater", "Cinemax"
             },
         time[] = {
-                "11:00", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", "3:30",
-                "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "8:00",
-                "9:00", "10:00"
+                "11:00 AM", "11:20 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM",
+                "2:30 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM",
+                "6:30 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM"
             }, head = "Sl. No.    Movie Name", date = "";
         int movieSlNo = 1, theaterSlNo = 1, tickets = 1, inpTime;
         Scanner rs = new Scanner(System.in);
@@ -77,7 +77,7 @@ class movie_ticket_reservation_system{
         System.out.println("Date : " + date);
         System.out.println("Time : " + finalTime[inpTime+1]);
         System.out.println("Total Tickets : " + tickets);
-        System.out.println("Total Amount : Rs." + (tickets*120));
+        System.out.println("Total Amount : Rs. " + (tickets*120));
     }
 
     public static int random(int max, int min) {
