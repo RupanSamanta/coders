@@ -2,22 +2,20 @@ import java.io.*;
 import java.lang.*;
 import java.util.Scanner;
 class movie_ticket_reservation_system{
-    
-    public static String movieList[] = {
-        "Jurassic World", "Intestellar", "Titanic", "Avengers : End Game"
-    },
-    theaterNames[] = {
-        "Inox", "Cinepolis", "Star Theater", "Cinemax"
-    },
-    time[] = {
-        "11:00", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", "3:30",
-        "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "8:00",
-        "9:00", "10:00"
-    },
-    head = "Sl. No.    Movie Name", date = "", inpTime= "";
-    public static int movieSlNo = 1, theaterSlNo = 1, tickets = 1;
 
     public static void main(String[] args) {
+        String movieList[] = {
+                "Jurassic World", "Intestellar", "Titanic", "Avengers : End Game"
+            },
+        theaterNames[] = {
+                "Inox", "Cinepolis", "Star Theater", "Cinemax"
+            },
+        time[] = {
+                "11:00", "12:00", "12:30", "1:00", "1:30", "2:00", "2:30", "3:30",
+                "4:00", "4:30", "5:00", "5:30", "6:00", "6:30", "7:00", "8:00",
+                "9:00", "10:00"
+            }, head = "Sl. No.    Movie Name", date = "";
+        int movieSlNo = 1, theaterSlNo = 1, tickets = 1, inpTime;
         Scanner rs = new Scanner(System.in);
 
         System.out.println("MOVIE TICKET RESERVATION SYSTEM\n");
@@ -56,23 +54,33 @@ class movie_ticket_reservation_system{
         theaterSlNo = rs.nextInt();
 
         System.out.println("\n\nMovie Time at " + theaterNames[theaterSlNo]);
-        for (int i = 0, rand = random(5, 1); i < rand; i++)
-            System.out.print(time[random(time.length-1, 1)] + "\t");
-        System.out.print("\nChoose a Movie Time from above : ");
-        inpTime = rs.next();
-        System.out.println("\n\nEnter number of tickets to be purchased : ");
+        int rand = random(5, 1);
+        String finalTime[] = new String[rand];
+        for (int i = 0; i < rand; i++)
+            finalTime[i] = time[random(time.length-1, rand)];
+        for (int i = 1; i < finalTime.length; i++) {
+            if(finalTime[i].compareTo(finalTime[i-1]) < 0){
+                String temp = finalTime[i];
+                finalTime[i] = finalTime[i-1];
+                finalTime[i-1] = temp;
+            }
+        }
+        for (int i = 0; i < finalTime.length; i++)
+            System.out.println((i+1) + ") " + finalTime[i] + "\t");
+        System.out.print("\n\nChoose a Movie Time from above : ");
+        inpTime = rs.nextInt();
+        System.out.print("\n\nEnter number of tickets to be purchased : ");
         tickets = rs.nextInt();
-        receipt();
-    }
-    public static int random(int max, int min) {
-        return (int)(Math.random() * (max - min + 1) + min);
-    }
-    public static void receipt(){
+
         System.out.println("\n\nMovie Name : " + movieList[movieSlNo-1]);
         System.out.println("Theater Name : " + theaterNames[theaterSlNo-1]);
         System.out.println("Date : " + date);
-        System.out.println("Time : " + inpTime);
+        System.out.println("Time : " + finalTime[inpTime+1]);
         System.out.println("Total Tickets : " + tickets);
-        System.out.println("Total Cost : \u20B9" + (tickets*120));
+        System.out.println("Total Amount : Rs." + (tickets*120));
+    }
+
+    public static int random(int max, int min) {
+        return (int)(Math.random() * (max - min + 1) + min);
     }
 }
