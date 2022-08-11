@@ -5,13 +5,14 @@ class movie_ticket_reservation_system{
 
     public static void main(String[] args) {
         String movieList[] = {
-                "Jurassic World", "Intestellar", "Titanic", "Avengers : End Game"
+                "Jurassic World", "Intestellar", "Titanic", "Avengers : End Game",
+                "Spider-Man", "The Martian", "Pirates of the Caribbean"
             },
         theaterNames[] = {
                 "Inox", "Cinepolis", "Star Theater", "Cinemax"
             },
         time[] = {
-                "11:00 AM", "11:20 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM",
+                "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM",
                 "2:30 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM",
                 "6:30 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM"
             }, head = "Sl. No.    Movie Name", date = "";
@@ -34,7 +35,7 @@ class movie_ticket_reservation_system{
         System.out.print("\nEnter Serial Number to Choose a Movie : ");
         movieSlNo = rs.nextInt();
 
-        System.out.print("\nEnter Date (dd/mm/yyyy) : ");
+        System.out.print("\n\nEnter Date (dd/mm/yyyy) : ");
         date = rs.next();
 
         head = "Sl. No.         Theater";
@@ -67,7 +68,7 @@ class movie_ticket_reservation_system{
         }
         for (int i = 0; i < finalTime.length; i++)
             System.out.println((i+1) + ") " + finalTime[i] + "\t");
-        System.out.print("\n\nChoose a Movie Time from above : ");
+        System.out.print("\nChoose a Movie Time from above : ");
         inpTime = rs.nextInt();
         System.out.print("\n\nEnter number of tickets to be purchased : ");
         tickets = rs.nextInt();
@@ -75,9 +76,9 @@ class movie_ticket_reservation_system{
         System.out.println("\n\nMovie Name : " + movieList[movieSlNo-1]);
         System.out.println("Theater Name : " + theaterNames[theaterSlNo-1]);
         System.out.println("Date : " + date);
-        System.out.println("Time : " + finalTime[inpTime+1]);
+        System.out.println("Time : " + finalTime[inpTime-1]);
         System.out.println("Total Tickets : " + tickets);
-        System.out.println("Total Amount : Rs. " + (tickets*120));
+        System.out.println("Total Amount : Rs. " + (tickets*100));
     }
 
     public static int random(int max, int min) {
