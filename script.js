@@ -6,10 +6,10 @@ headerFooter();
 
 function headerFooter() {
    HEADER.innerHTML = 
-         `<div>
+         `<a href="https://rupansamanta.github.io/code-bar/" >
             <i class="fa-solid fa-terminal"></i>
             <span>Code Bar</span>
-          </div>`;
+          </a>`;
    FOOTER.innerHTML = 
          `<div id="footer-logo">
             <i class="fa-solid fa-terminal"></i>
