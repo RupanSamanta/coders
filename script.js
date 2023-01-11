@@ -55,7 +55,7 @@ function generateExample(i, title, url) {
    span = document.createElement('span');
    span.innerHTML = title;
    anchor.appendChild(span);
-   anchor.setAttribute('href', url);
+   anchor.setAttribute('href', 'java-programs/'+url);
    div.appendChild(anchor);
    div.setAttribute('class', 'examples');
    EXAMPLES_BOX.appendChild(div);
