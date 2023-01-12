@@ -6,7 +6,7 @@ const PROGRAM =
       url: "add-two-integers"
    },
    {
-      title: "Java Program to Accept the Size and the Elements of a Square Matrix and Display It",
+      title: "Java Program to Accept the Size and the Elements of a Matrix and Display It",
       type: "Java Double Dimensional Array",
       url: "accept-display-matrix"
    }
