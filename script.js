@@ -12,8 +12,10 @@ function headerFooter() {
           </a>`;
    FOOTER.innerHTML = 
          `<div id="footer-logo">
-            <i class="fa-solid fa-terminal"></i>
-            <span>Code Bar</span>
+            <a href="https://rupansamanta.github.io/code-bar/" >
+              <i class="fa-solid fa-terminal"></i>
+              <span>Code Bar</span>
+            </a>
          </div>
          <div class="blocks">
           <div>
