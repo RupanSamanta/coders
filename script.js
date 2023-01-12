@@ -42,7 +42,7 @@ function headerFooter() {
             </a>
             <a href="mailto:rupansamanta936@gmail.com">
                <i class="fa-solid fa-envelope"></i>
-               <span>Gmail</span>
+               <span>Email</span>
             </a>
          </div>`;
 }
