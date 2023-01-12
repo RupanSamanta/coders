@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('//db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas');
+@font-face {font-family: "Consolas";
+    src: url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg"); /* iOS 4.1- */
+}
 :root {
    --darkslate: #555e71;
 }
