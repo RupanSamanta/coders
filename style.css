@@ -271,7 +271,7 @@ a {
    line-height: 1.8;
 }
 #source-code-box .code-buttons {
-   width: 40px;
+   width: 50px;
    background: rgba(255,255,255,0.15);
    border: solid 1px lightgray;
    color: lightgray;
@@ -342,7 +342,7 @@ a {
    margin-bottom: 0;
 }
 .other-box {
-   width: 360px;
+   width: 370px;
    height: 150px;
    border-radius: 10px;
    margin: 20px auto;
