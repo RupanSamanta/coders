@@ -267,7 +267,7 @@ a {
 #line-number span {
    line-height: 1.8;
 }
-#source-code-box #copy {
+#source-code-box .code-buttons {
    background: rgba(255,255,255,0.15);
    border: solid 1px lightgray;
    color: lightgray;
@@ -277,7 +277,7 @@ a {
    font-size: 12px;
    font-family: "Poppins", sans-serif;
 }
-#source-code-box #copy:active {
+#source-code-box .code-buttons:active {
    transform: scale(0.9);
 }
 #source-code-box #source-code {
