@@ -31,8 +31,10 @@
          <div id="code">
             <p class="heading">Code</p>
             <div id="source-code-box">
-               <button class="code-buttons" id="download"><i class="fa-solid fa-download"></i></button>
-               <button class="code-buttons" id="copy">Copy</button>
+               <article>
+                  <a href="../../Java/Add Two Integers.java" download><button class="code-buttons" id="download"><i class="fa-solid fa-download"></i></button></a>
+                  <button class="code-buttons" id="copy">Copy</button>
+               </article>
                <article>
                   <p id="line-number"></p>
                   <pre id="source-code" class="language-java"></pre>
@@ -78,7 +80,7 @@
          document.getElementById('source-code').outerText,
          document.getElementById('copy')
       );
-   });
+   });/*
    document.getElementById('download').addEventListener('click', function () {
       let a = document.createElement('a');
       a.setAttribute('href', '../../Java/Add Two Integers.java');
@@ -88,7 +90,7 @@
       setTimeout(function () {
         document.body.removeChild(a);
       }, 300);
-   });
+   });*/
    for (let i = 0; i < PROGRAM.length; i++) {
       if (i != 0) {
          otherPrograms (
