@@ -239,8 +239,8 @@ a {
 }
 #source-code-box {
    display: flex;
-   flex-direction: column;
    align-items: flex-end;
+   flex-wrap: wrap;
 }
 #source-code-box article {
    width: 100%;
@@ -268,6 +268,7 @@ a {
    line-height: 1.8;
 }
 #source-code-box .code-buttons {
+   width: 80px;
    background: rgba(255,255,255,0.15);
    border: solid 1px lightgray;
    color: lightgray;
