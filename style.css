@@ -250,6 +250,9 @@ a {
    flex-direction: row;
    margin: 5px 0;
 }
+#source-code-box article:first-child {
+   justify-content: flex-end;
+}
 #source-code-box #line-number {
    width: fit-content;
    display: flex;
