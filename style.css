@@ -271,7 +271,7 @@ a {
    line-height: 1.8;
 }
 #source-code-box .code-buttons {
-   width: 50px;
+   width: auto;
    background: rgba(255,255,255,0.15);
    border: solid 1px lightgray;
    color: lightgray;
