@@ -27,7 +27,7 @@ const CODE =
 OUTPUT = 
 `<code>Enter Row Size: 2</code>
 <code>Enter Column Size: 3</code>
-<code><br><br></code>
+<code><br></code>
 <code>Enter Matrix Elements:</code>
 <code>1</code>
 <code>2</code>
@@ -35,7 +35,7 @@ OUTPUT =
 <code>4</code>
 <code>5</code>
 <code>6</code>
-<code><br><br></code>
+<code><br></code>
 <code>Matrix:</code>
 <code>1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</code>
 <code>4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6</code>`;
