@@ -71,6 +71,8 @@ function setNumberCodeOuput(arr, ind, code, output, opt) {
       ind.append(span);
       if (str[str.length-1] == "}")
          space = space.substring(0, space.length-3);
+      str = str.replace(/</, '&lt;');
+      str = str.replace(/>/, '&gt;');
       code.append(`<code>${space+str}<code>`);
       if (str[str.length-1] == "{")
          space += "   ";
