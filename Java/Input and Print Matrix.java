@@ -1,24 +1,24 @@
-import java.util.Scanner;
-public class Matrix {
-   public static void main(String args[]) {
-      Scanner sc = new Scanner(System.in);
-      System.out.print("Enter Row Size: ");
-      int row = sc.nextInt();
-      System.out.print("Enter Column Size: ");
-      int col = sc.nextInt();
-      int arr[][] = new int[row][col];
-      System.out.println("\nEnter Matrix Elements: ");
-      for(int i=0; i<row; i++) {
-         for(int j=0; j<col; j++) {
-            arr[i][j] = sc.nextInt();
-         }
-      }
-      System.out.println("\nMatrix: ");
-      for(int i=0; i<row; i++) {
-         for(int j=0; j<col; j++) {
-            System.out.print(arr[i][j] + "\t");
-         }
-         System.out.println();
-      }
-   }
+import java.util.Scanner;//n
+public class Matrix {//n
+   public static void main(String args[]) {//n
+      Scanner sc = new Scanner(System.in);//n
+      System.out.print("Enter Row Size: ");//n
+      int row = sc.nextInt();//n
+      System.out.print("Enter Column Size: ");//n
+      int col = sc.nextInt();//n
+      int arr[][] = new int[row][col];//n
+      System.out.println("\nEnter Matrix Elements: ");//n
+      for(int i=0; i<row; i++) {//n
+         for(int j=0; j<col; j++) {//n
+            arr[i][j] = sc.nextInt();//n
+         }//n
+      }//n
+      System.out.println("\nMatrix: ");//n
+      for(int i=0; i<row; i++) {//n
+         for(int j=0; j<col; j++) {//n
+            System.out.print(arr[i][j] + "\t");//n
+         }//n
+         System.out.println();//n
+      }//n
+   }//n
 }
