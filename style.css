@@ -37,6 +37,7 @@ header {
    background: #fff;
    box-shadow: 5px 0 30px 5px rgba(0,0,150,0.15);
    z-index: 999;
+   user-select: none;
 }
 footer {
    padding: 25px;
@@ -230,6 +231,12 @@ a {
 #code, #output {
    width: 300px;
    margin: 0 auto 30px auto;
+}
+@media only screen and (min-width: 768px) {
+   #code, #output {
+      width: 350px;
+      margin: 0 auto;
+   }
 }
 .heading {
    width: 100%;
