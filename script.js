@@ -6,14 +6,18 @@ function setTitle(i) {
 function headerFooter() {
    $('header').first().html(
          `<div>
-            <i class="fa-solid fa-terminal"></i>
-            <span>Coders</span>
+            <a href="https://rupansamanta.github.io/coders" class="logo">
+               <i class="fa-solid fa-terminal"></i>
+               <span>Coders</span>
+            </a>
           </div>`
    );
    $('footer').first().html(
          `<div id="footer-logo">
-            <i class="fa-solid fa-terminal"></i>
-            <span>Coders</span>
+            <a href="https://rupansamanta.github.io/coders" class="logo">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Coders</span>
+            </a>
          </div>
          <div class="blocks">
           <div>
