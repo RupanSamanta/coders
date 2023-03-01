@@ -147,6 +147,9 @@ a {
    padding-bottom: 20px;
    border-bottom: solid 1px darkgray;
 }
+a.logo {
+   user-select: none;
+}
 #social-media {
    font-size: 16px;
    color: lightgray;
