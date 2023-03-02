@@ -232,7 +232,7 @@ a.logo {
    flex-wrap: wrap;
 }
 #code, #output {
-   width: 300px;
+   width: 100%;
    margin: 0 auto 30px auto;
 }
 @media only screen and (min-width: 768px) {
