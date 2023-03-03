@@ -84,18 +84,17 @@ a {
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: 40px;
 }
 #java-logo span:first-child {
    width: 80px;
    height: 80px;
    background: royalblue;
    color: #fff;
-   font-size: 40px;
    border-radius: 5px;
 }
 #java-logo span:last-child {
    width: 200px;
-   font-size: 40px;
    font-weight: 600;
    color: #000;
 }
@@ -234,12 +233,6 @@ a.logo {
 #code, #output {
    width: 100%;
    margin: 0 auto 30px auto;
-}
-@media only screen and (min-width: 768px) {
-   #code, #output {
-      width: 350px;
-      margin: 0 auto;
-   }
 }
 .heading {
    width: 100%;
@@ -413,4 +406,20 @@ a.logo {
    margin: 15px;
    margin-top: 0;
    text-overflow: ellipsis;
+}
+@media only screen and (min-width: 768px) {
+   #code, #output {
+      width: 350px;
+      margin: 0 auto;
+   }
+   #introduction {
+      height: 330px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   #java-logo span {
+      height: 100px;
+      font-size: 50px;
+   }
 }
