@@ -418,8 +418,15 @@ a.logo {
       justify-content: space-between;
       align-items: center;
    }
+   #java-logo {
+      width: 600px;
+   }
    #java-logo span {
-      height: 100px;
-      font-size: 50px;
+      height: 200px;
+      font-size: 60px;
+   }
+   #java-logo span:fisrt-child {
+      width: 200px;
+      height: 200px;
    }
 }
