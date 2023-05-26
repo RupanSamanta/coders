@@ -1,4 +1,4 @@
-package CLASS_IX;
+
 import java.util.Scanner;
 class  Asssignment6 {
   public static void main (String args[]) {
